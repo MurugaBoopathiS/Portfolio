@@ -1,0 +1,268 @@
+* {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.5;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 2rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    nav {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #24e227;
+    }
+    header button {
+      padding: 0.35rem 1rem;
+      font-weight: 600;
+      border: 1px solid #24e227;
+      background-color: transparent;
+      color: #24e227;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+    header button:hover {
+      background-color: #24e227;
+      color: white;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto 3rem;
+      padding: 0 1rem;
+      background-color: #fff;
+      box-shadow: 0 0 12px rgb(0 0 0 / 0.05);
+      border-radius: 6px;
+    }
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .intro-text {
+      flex: 1 1 300px;
+    }
+    .intro-text h1 {
+      margin: 0 0 0.75rem 0;
+      font-size: 2rem;
+    }
+    .intro-text p {
+      margin: 0 0 1.25rem 0;
+      color: #555;
+      font-size: 0.95rem;
+      max-width: 500px;
+    }
+    .intro-text button {
+      padding: 0.5rem 1rem;
+      border: 1px solid #24e227;
+      background-color: transparent;
+      color: #24e227;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.25s ease;
+    }
+    .intro-text button:hover {
+      background-color: #24e227;
+      color: white;
+    }
+    .intro-image {
+      flex: 0 1 180px;
+      text-align: center;
+    }
+    .intro-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #ddd;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #000000;
+    }
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      flex: 1 1 180px;
+      max-width: 200px;
+      border: 1.5px solid #000000;
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+      cursor: default;
+      transition: box-shadow 0.25s ease;
+    }
+    .card:hover {
+      box-shadow: 0 0 12px rgba(219, 126, 24, 0.5);
+      border-color: #24e227;
+    }
+    .card-icon {
+      background-color: #24e227;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 auto 0.5rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+    .card-title {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 0.85rem;
+      color: #000000;
+      min-height: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .card button {
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      background-color: transparent;
+      border: 1px solid #24e227;
+      color: #24e227;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.25s ease;
+    }
+    .card button:hover {
+      background-color: #24e227;
+      color: #fff;
+    }
+    .Skills-container {
+      background-color: #eaeaea;
+      border-radius: 6px;
+      padding: 1rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 0.9rem;
+      color: #333;
+      font-style: italic;
+      text-align: center;
+      position: relative;
+    }
+    .Skills-container p {
+      margin: 0 0 0.75rem 0;
+      font-style: italic;
+    }
+    .Skills-author {
+      font-weight: 700;
+      font-style: normal;
+    }
+    .Skills-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #777;
+      cursor: pointer;
+      user-select: none;
+    }
+    .Skills-arrow.left {
+      left: 12px;
+    }
+    .Skills-arrow.right {
+      right: 12px;
+    }
+    footer {
+      background: #fff;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
+      border-top: 1px solid #ddd;
+    }
+    .contact-info {
+      margin-bottom: 0.85rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .contact-info span svg {
+      width: 16px;
+      height: 16px;
+      fill: #24e227;
+    }
+    .copyright {
+      font-size: 0.75rem;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro-image {
+        flex: none;
+      }
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav {
+        display: none; 
+      }
+      header {
+        justify-content: space-between;
+      }
+    }

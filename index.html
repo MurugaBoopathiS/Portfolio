@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo" aria-label="Logo - boopathi">boopathi</div>
+    <nav aria-label="Primary Navigation">
+      <a >Home</a>
+      <a >Education</a>
+      <a >About</a>
+      <a >Projects</a>
+      <a>Skills</a>
+    </nav>
+    <button type="button">Let's Talk</button>
+  </header>
+  <main>
+    <section class="intro" >
+      <div class="intro-text">
+        <h1>Muruga Boopathi S</h1>
+        <p>Final year Student at Karpagam College of Engineering</p>
+        <button type="button">Projects</button>
+      </div>
+      <div class="intro-image">
+        <img src="boopathi.jpg">
+      </div>
+    </section>
+    <section id="services" >
+      <h2>Education</h2>
+      <div class="cards-container">
+        <article class="card" role="article" aria-labelledby="service1-title">
+          <h3 id="service1-title" class="card-title">Schooling</h3>
+          <p class="card-text">ICompleted My Schooling in Equitas Gurukul Mtric Higher Secondary School.</p>
+        </article>
+        <article class="card" role="article" aria-labelledby="service2-title">
+          <h3 id="service2-title" class="card-title">College</h3>
+          <p class="card-text">And now I am Currently purshing the degree B.tech Information Technology in Karpagam College of Engineering in Coimbatore.</p>
+        </article>
+      </div>
+    </section>
+    <section id="projects" aria-label="Projects showcase">
+      <h2>Projects</h2>
+      <div class="cards-container">
+        <article class="card" role="article" aria-labelledby="project1-title">
+          <img src="Ai.jpg" alt="Abstract project thumbnail with mountain and sun illustration" style="width:80px; height:60px; margin-bottom:0.5rem; border-radius:4px;" onerror="this.style.display='none'" />
+          <h3 id="project1-title" class="card-title"> AI Voice Assistant</h3>
+          <p class="card-text">Developed an advanced AI-powered assistant tailored for visually impaired individuals, enabling seamless interaction 
+through voice and vision technologies.</p>
+          <button type="button">Know More</button>
+        </article>
+        <article class="card" role="article" aria-labelledby="project2-title">
+          <img src="task.jpg" style="width:80px; height:60px; margin-bottom:0.5rem; border-radius:4px;" onerror="this.style.display='none'" />
+          <h3 id="project2-title" class="card-title">Task Manager</h3>
+          <p class="card-text">Created a user-friendly platform for purchasing organic products, providing a seamless shopping experience from 
+browsing to checkout.</p>
+          <button type="button">Know More</button>
+        </article>
+      </div>
+    </section>
+    <section id="Skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="Skills-container" role="region" aria-live="polite" aria-atomic="true">
+        <span class="Skills-arrow left" tabindex="0" role="button" aria-label="Previous Skills">❮</span>
+        <p> C, Java, HTML, CSS, Mysql</p>
+        <footer class="Skills-author">muruga boopathi</footer>
+        <span class="Skills-arrow right" tabindex="0" role="button" aria-label="Next Skills">❯</span>
+      </div>
+    </section>
+    <section id="about" aria-label="About Me">
+      <h2>About Me</h2>
+      <p style="max-width:700px; margin: 0 auto; font-size: 0.9rem; color: #333;">
+        Hello! Muruga Boopathi here.
+Currently, I am styding in the Department of Information Technology at Karpagam college of Engineering in Coimbatore. My early education was completed from Equitas Gurukul Matric Higher Secondary School in Karur.
+      </p>
+    </section>
+  </main>
+  <footer aria-label="Contact Information">
+    <div class="contact-info">
+      <span> murugaboopathi1817@gmail.com</span>
+      <span> 9360555764</span>
+    </div>
+    <div class="copyright">© 2025. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>
+
